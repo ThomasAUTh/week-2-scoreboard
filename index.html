@@ -47,15 +47,15 @@
 <div class="scoreboard">
   <div class="score">
     <div class="dino">Tyrannosaur</div>
-    <div class="points" id="score">24</div>
+    <div class="points" id="score1">24</div>
   </div>
   <div class="score">
     <div class="dino">Apatosaurus</div>
-    <div class="points" id="score">2</div>
+    <div class="points" id="score2">2</div>
   </div>
   <div class="score">
     <div class="dino">Brachiosaurus</div>
-    <div class="points" id="score">12</div>
+    <div class="points" id="score3">12</div>
   </div>
 </div>
 <div class="lead">
@@ -64,10 +64,24 @@
 </div>
 
 <script>
-    document.getElementById('score').onclick = function(){
-        var points = parseInt(document.getElementById("score").innerHTML);
+    //added onclick functions to increase points by 1 on click
+    
+    document.getElementById('score1').onclick = function(){
+        var points = parseInt(document.getElementById("score1").innerHTML);
         points++
-        document.getElementById("score").innerHTML = points;
+        document.getElementById("score1").innerHTML = points;
+    }
+
+    document.getElementById('score2').onclick = function(){
+        var points = parseInt(document.getElementById("score2").innerHTML);
+        points++
+        document.getElementById("score2").innerHTML = points;
+    }
+
+    document.getElementById('score3').onclick = function(){
+        var points = parseInt(document.getElementById("score3").innerHTML);
+        points++
+        document.getElementById("score3").innerHTML = points;
     }
 </script>
 
