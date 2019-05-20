@@ -59,7 +59,7 @@
   </div>
 </div>
 <div class="lead">
-  <p>Tyrannosaur is in the lead with a whopping 24 points!!</p>
+  <p>Tyrannosaur is in the lead with a whopping <p id="topScore">24</p>points!!</p>
   <p>(Apatosaurus comes in last with a meager 2 points...)</p>
 </div>
 
@@ -67,22 +67,28 @@
     //added onclick functions to increase points by 1 on click
     
     document.getElementById('score1').onclick = function(){
-        var points = parseInt(document.getElementById("score1").innerHTML);
-        points++
-        document.getElementById("score1").innerHTML = points;
+      var points = parseInt(document.getElementById("score1").innerHTML);
+      points++
+      document.getElementById("score1").innerHTML = points;
     }
 
     document.getElementById('score2').onclick = function(){
-        var points = parseInt(document.getElementById("score2").innerHTML);
-        points++
-        document.getElementById("score2").innerHTML = points;
+      var points = parseInt(document.getElementById("score2").innerHTML);
+      points++
+      document.getElementById("score2").innerHTML = points;
     }
 
     document.getElementById('score3').onclick = function(){
-        var points = parseInt(document.getElementById("score3").innerHTML);
-        points++
-        document.getElementById("score3").innerHTML = points;
+      var points = parseInt(document.getElementById("score3").innerHTML);
+      points++
+      document.getElementById("score3").innerHTML = points;
     }
+
+    let document.getElementById("topScore").innerHTML = points
+
+   
+    
+    
 </script>
 
 </body>
